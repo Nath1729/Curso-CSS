@@ -1,0 +1,27 @@
+.div-uno {
+  background-color: chartreuse;
+  width: 90px;
+  height: 100px;
+  display: inline-block;
+}
+
+.div-dos {
+  background-color: chartreuse;
+  width: 90px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.div-tres {
+  background-color: chartreuse;
+  width: 90px;
+  height: 100px;
+  overflow: scroll;
+}
+
+.div-cuatro {
+  background-color: chartreuse;
+  width: 90px;
+  height: 100px;
+  overflow: auto;
+}

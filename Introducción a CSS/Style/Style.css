@@ -1,0 +1,8 @@
+h2 {
+  color: green;
+  transition: all 5s;
+}
+
+h2:hover {
+  color: brown;
+}

@@ -1,0 +1,16 @@
+.margin-collapse {
+  background-color: coral;
+}
+
+.margin-collapse section {
+  border: 1.5px solid blue;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.margin-collapse span {
+  display: inline-block;
+  margin-right: 16px;
+  margin-left: 16px;
+  border: 1.5px solid blue;
+}

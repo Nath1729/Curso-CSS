@@ -1,0 +1,9 @@
+.margin-collapse {
+  background-color: coral;
+}
+
+.margin-collapse section {
+  border: 1.5px solid blue;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

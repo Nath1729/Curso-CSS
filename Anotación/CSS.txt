@@ -1,0 +1,345 @@
+Curso de CSS
+
+Introducción a CSS
+	CSS: Es Hojas de Estilo en Cascada(Cascading Style Sheets). Es el lenguaje de definición de estilo.
+
+Sintaxis Básicas
+
+	1)Selector: El elector es el html que nosotros podemos aplicar con css el estilo. Los selectores
+son cualquier etiqueta html. Hay diferentes tipos de selectores que los veremos mas adelante.
+	2)Bloque de Declaraciones: Es acda uno de los atributos que se van a modificar.
+Cada atributo que pongamos tiene la siguiente sintaxis: " atributo: valor; ". Los nombre de los atributos
+solo tiene una palabra. Si tiene mas de una palabra entonces tendria que ser de la siguiente manera:
+" atributo-de-mas-de-dos-palabras: otro-valor ". Lo mismo pasa con el valor.
+El valor tiene que ir entre llave-parentecis. 
+
+Comentarios en CSS
+	Para hacer un comentario se hace de la siguiente forma: /* texto */.
+
+Formas de Innovación CSS
+	Hay 3 formas de invocar css.
+1)style como atributo en html: Se puede colocar en una etiqueta html el atributo "style" para darle estilo a esa etiqueta.
+2)Etiqueta style en el head: En el head de html se puede colocar la etiqueta <style> y dentro colocar los selectore, atributos, etc.
+Y haci darle estilo a nuestro archivo html.
+3)Desde un archivo externo: Se puede crear un archivo css y luego en el head de html colocar un link y la ruta del archivo css.
+
+Versiones, Documentación y Enlaces de Referencia
+	video.
+
+Selectores Básicos: Etiquetas, Identificadores y Clases
+	1)Etiquetas: Son las etiquetas de html.
+	2)Identificadores: Es con el atributo id=""(#).
+	3)Classes: Es con el atributo class(.)
+
+Dando orden y estructura a nuestro código html y css
+	Solo ordena la estructura html y css. Mas en el video.
+
+Selector de hijos directos y descendientes
+	En el ejemplo del editor los padres son los "ul". Y los hijos directos son los "li", y los hijos de los "li" son los "b".
+Eso es un hijo directo.
+
+	Un hijo descendiente es el nieto de la etiqueta y no importa en que orden se encuentra(no importa si son nietos o bisnietos).
+Por ejemplo: " .descendiente b ". El valor que se le aplique afectará a "b". Ejemplo en el editor.
+
+Selector de hermanos y adyacentes
+	Selector de hermanos en general: Se usa el caracter "~". Ejemplo: .hermanos-general ~ li.
+Los selectores de hermanos solo aplica a sus hermanos que estan por debajo. Ejemplo en el editor.
+
+	Selector de hermanos adyacentes: Se usa el caracter "+". Ejemplo: .hermanos-adyacente + li. Este 
+selector solo aplica al hermano que está por debajo del selector de referencia.
+
+Selector de atributos
+	Se selecciona con el atributo que tenga la etiqueta. Ejemplo: .selector-atributo a[href].
+
+Selector universal
+	*: El selector universal es el asterisco(*). El selector universal aplica a todos lo elementos que se encuentren
+en el body.
+
+pseudoclases de estado
+	required: hace que sea requerido.
+	valid: indica cuando es valido.
+	invalid: indica cuando es invalido.
+	focus: se activa cuando se selecciona el elemento.
+	hover: se activa cuando se le coloca el puentero encima.
+Ojo el tamaño de la letra por defecto es de 16px.
+	target: es para activar.
+
+Pseudoclases por posicion y tipo
+	first-child: aplica al primer elemento.
+	last-child: aplica al ultimo elemento.
+	nth-child(#que queramos): aplica al elemento hijo. o al que queramos.
+	(2n): aplica de 2 en 2.
+	(even): es par(spanish) salta 1.
+	(odd): es lo contrario al de arriba.
+	first-of-type: se aplica al primero en su tipo.
+	first-of-type: se aplica al ultimo en su tipo.
+	nth-of-type(3): el que queramos de un tipo de elemento.
+	not(): es para que no aplique a tal elemento.
+
+pseudoelementos
+	Las pseudoelementos se identifican por dos doble puntos(::).
+	before: crea un pseudoelemento antes del contenido.
+	after: crea un pseudoelemento despues del contenido.	Tanto before y after, tienen que llevar la propiedad content("hola").
+	first-letter: con esta pseudoelemento se modifica la primera letra.
+	first-line: con esta se modifica la primera linea.
+	selection: se activa cuando se selecciona.
+	placeholder: se modifica el texto del placeholder en el input.
+
+Agrupación de selectores
+	La agrupación de selectores es: .form-agrupación-selectores input[type="text"],
+.form-agrupación-selectores input[type="email"],
+.form-agrupación-selectores textarea {
+  border-color: yellow;
+}
+
+El Algoritmo de CSS
+	El algoritmo de css es la forma en que el navegador va a aplicar los estilos a nuestro documento html
+
+La Cascada
+	La cascada es el orden en que se aplican los estilos.
+Los estilos se aplican de manera descendente.
+
+Especificidad
+	Se refiere a la importancia de selectores o el rango que hay esntre ellos.
+
+Practicando Cascada y Especificidad
+	Solo es practica. Revisa el video y el codigo Index.
+
+La herencia
+	La herencia, es la capacidad de un selector de obtener (heredar) los valores de sus ancestros mas cercanos,
+para aplicarla se usa el valor inherit, si queremos evitarla podemos asignar otro valor o inicializar la propiedad
+en cuestión con el valor initial.
+
+Reseteo y normalización de estilos
+	El Reseteo o el Normalize.css lo que hace es quitar las propiedades le da el navegador a nuestro archivo index.
+		Enlace para Normalize y reseteo de css
+https://meyerweb.com/eric/tools/css/reset/
+https://necolas.github.io/normalize.css/
+El código del Normalize o el de Reset no se debe pegar en nuestra hoja de estilo.
+Como estas hojas de estilo resetean o normalizan nuestro archivo index, lo ideal es seguir el regimen de la cascada. Hacer la invocación del
+Normalize o el reset de primer lugar en nuestro codigo html y luego hacer la invocación de nuestra hoja de estilo. Ejemplo en codigo html(head).
+
+Prefijos de los navegadores
+	Explicación en video.
+
+Modelo de Caja
+https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model
+	El modelo de caja o Box-Model, se refiere a la caja que reconoce en el código de html. Ejemplo:
+El h1 y su distancia que tiene con otros elementos. El h1 tiene su margin, su padding y su border.
+	Es la forma en que CSS ve los elementos HTML. (Como Cajas)
+Modelo de Caja: Es la forma en que CSS ve a los elementos HTML y ¿cómo los ve? como si fueran cajas con las siguientes propiedades:
+  1. El contenido (content): El contenido (texto) del elemento HTML, tomando en cuanta sus dimensiones (width & height)
+  2. El borde (border): Lo que delimita cada uno de los elementos HTML
+  3. El relleno (padding): Son las distancias internas (La distancia del borde al contenido)
+  3. El márgen (margin): Son las distancias externas (La distancia entre el elemento html y sus elementos hermanos o padres)
+Dentro del modelo de caja hay que considerar que una caja tendrá 4 lados:
+  1. Arriba (top)
+  2. Derecha (right)
+  3. Abajo (bottom)
+  4. Izquierda (left)
+
+Width y Height(Ancho y Altura)
+	Es el Ancho y Altura.
+
+Border
+	Es el borde :V. El Border tiene 3 propiedades que son: border-color, border-width y border-style.
+border-color: Es para el color del borde.
+border-width: Que es para el ancho de la linea.
+	thin: thin en español es delgado. Hace que la linea sea delgada. coloca la linea de 1px.
+	medium: Es igual a 3px.
+	thick: Es igual a 5px.(Estas propiedades son de tipo shorthan)
+
+border-style: Es el estilo de la linea.
+	border-style: Tiene varios valores.
+		solid: Es para que la linea sea solida.
+		dashed: Es para que la linea se, un pedacito si y uno no.
+		dotted: Es para que el borde salga punteado.
+Para simplificar todo, se coloca border y los valores. Ejemplo: border: solid 2px red;.
+
+Margin y Padding(Margen y Relleno)
+	El márgen (margin): Son las distancias externas (La distancia entre el elemento html y sus elementos hermanos o padres).
+	El relleno (padding): Son las distancias internas (La distancia del borde al contenido).
+Dentro del modelo de caja hay que considerar que una caja tendrá 4 lados:
+  1. Arriba (top)
+  2. Derecha (right)
+  3. Abajo (bottom)
+  4. Izquierda (left)
+
+Cajas de Línea VS Cajas de Bloque(inline vs block)
+	Caja de Línea
+  - Ocupan el espacio necesario para mostrar su contenido.
+  - No tienen dimensiones modificables (alto, ancho).
+  - Permiten otros elementos a su lado.
+  - Padding y margin solo empujan a elementos adyacentes en horizontal, NUNCA EN VERTICAL.
+  - No es recomendable aplicar padding vertical a los elementos en linea, porque ocuparia espacio que no le corresponde.
+Caja de Bloque
+  - Ocupan todo el ancho disponible, lo que genera saltos de línea.
+  - Tienen dimensiones modificables (alto, ancho).
+  - No permiten otros elementos a su lado (aunque especifique un ancho, siguen ocupando todo el espacio disponible a lo ancho, generando saltos de línea).
+
+Propiedad Display
+	Propiedad Display
+  inline: El elemento se convierte en un elemento en línea : se comporta como texto simple.
+	  Cualquiera heighty widthaplicado no tendrá ningún efecto.
+  block: El elemento se convierte en un elemento de bloque : comienza en una nueva línea y ocupa todo el ancho.
+  inline-block - Se comporta como un elemento de línea pero acepta modificar sus dimensiones (alto y ancho)
+  none: El elemento se elimina por completo , como si no estuviera en el código HTML en primer lugar.
+  table: El elemento se comporta como una tabla : <table>. Su contenido y elementos secundarios se comportan como celdas de tabla.
+  list-item: El elemento se comporta como un elemento de la lista : <li>. La única diferencia con el bloque es que un elemento de la lista tiene una viñeta.
+  flex - ve mi curso de Flexbox CSS
+  grid - ve mi curso de Grid CSS
+
+
+Propiedad Visibility y sus valores
+	visible: Hace que el elemento oculto sea visible.
+	hidden: Hace que el elemento se oculte pero conserva su espacio.
+
+
+Propiedad Overflow y sus valores
+	esta propiedad nos permite decidir que va a pasar con el contenido que desborde su caja contenedora.
+	visible: El contenido desbordado es visible , mientras que el elemento en sí permanece a la altura especificada.(Es la que aplica por defecto)
+	hidden: El contenido desbordado está oculto y no se puede acceder a él.
+	scroll: El contenido desbordado es accesible gracias a una barra de desplazamiento vertical.
+	auto: El navegador decide si mostrar una barra de desplazamiento vertical o no.
+
+Tamaño de Caja(box-sizing)
+	Define cómo se calcula el ancho y alto del elemento: si incluyen el relleno y los bordes o no.
+	content-box: este valor lo trae por defecto.
+	border-box: considera el tamaño de la caja desde el borde.
+
+Float y Clear
+	float: Empuja el elemento hacia el lado izquierdo o derecho(flotando, es decir por encima de los demas elementos). Los siguientes hermanos envolverán el elemento flotante.
+	clear: Mueve el elemento después de todos los elementos flotantes anteriores. Basicamente ordena los elementos.
+	Hoy en día no se suele utilizar.
+
+Colapso de Márgenes verticales
+	Cuando uno le da margin de los dos lados verticales a dos elementos dentro de otro, se genera un colapso de margenes. Existe la regla de que si a dos elementos se le da margin a
+dos elementos de manera vertical, un margin va a estar encima de otro. Para resolver esto, se recomienda que los elementos a separar tengan solo margin-top o margin-bottom y asi evitar el
+colapso. Este colapso no aplica de manera horizontal.
+
+Adición de márgenes horizontales
+	Al colocarle margin de manera horizontal, no se genera un colapso, mas bien se suma.
+
+
+Centrado de Caja
+	Para centrar una caja se usa los margenes(margin) y se le coloca el valor de auto.
+El valor "auto" significa que lo va a ajustar automaticamente. Al colocar los margenes horizontales(right y left) de manera automatica, el resultado es que coloca la caja
+en el centro de la página.
+
+
+Posicionamiento CSS
+  La propiedades FLOAT y POSITION nos permiten modificar la posición natural de cualquier elemento del documento HTML.
+  El navegador coloca cada elemento teniendo en cuenta el orden en el que aparece en el documento y su tipo de visualización dependiendo si es un elemento de línea o de bloque.
+  Con FLOAT y POSITION podemos modificar este comportamiento.
+  Elementos Flotantes
+    - float: Convierte un elemento en flotante desplazándolo hasta la zona más a la izquierda o más a la derecha de la posición en la que originalmente se encontraba.
+    - clear: Limpia la flotación (left, right, both)
+  Tipos de Posicionamiento:
+    - static (default)
+    - relative
+    - absolute
+    - fixed
+    - sticky
+  Para mover los elementos posicionados se activan las propiedades:
+    - top (vertical - eje Y)
+    - bottom (vertical - eje Y)
+    - left (horizontal - eje X)
+    - right (horizontal - eje X)
+    - z-index (profundidad - eje Z)
+  Las propiedades top y left van a tener preferencia por sobre bottom y right respectivamente.
+  Estás 5 propiedades no funcionan con el valor de static.
+
+Posicionamiento static
+	static: Es el valor por defecto, significa que el elemento respeta el flujo del documento HTML, por lo que no se puede mover ni posicionar.
+
+
+Posicionamiento Relative
+	relative: El elemento conserva sus dimensiones y posición original en el flujo del documento. Si se mueve toma como referencia su posición original.
+Ojo, para mover un elemento se usa top, left, bottom y right.
+
+Posicionamiento Absolute
+	absolute: El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve puede tomar como referencia 2 elementos:
+  1) El primer ancestro con posicionamiento relativo
+  2) Si no encuentra un ancestro relativo, se mueve respecto del documento HTML.
+
+
+Posicionamiento fixed
+	fixed: El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve toma como referencia el documento HTML y queda fijo en la posición, cuando el scroll se mueva, el elemento no lo hará, queda FIJO.
+
+Posicionamiento sticky
+	sticky: es un combinación de posicionamiento relative y fixed, para este posicionamiento las propiedades de top, left, bottom y right no mueven el elemento, sirven como un punto de referencia, mientras no lleguen a ese valor el elemento se comporta como relative, cuando llega se convierte en fixed
+Para que este comportamiento funcione el elemento sticky debe ser hijo directo del body o su elemento contenedor debe tener dimensiones definidas y sólo será sticky dentro de las dimensiones de su contenedor padre.
+
+Propiedad z-index
+	z-index: propiedad que permite controlar la profundidad de los elementos posicionados, su valor por defecto es auto, acepta número positivos, negativos y cero.
+A mayor valor el elemento esta más al frente, a menor valor más al fondo.
+Un elemento padre nunca podrá estar sobre sus elementos hijos, sin embargo los elementos hijos si pueden dándoles un valor negativo y que el elemento padre no tenga definido valor de z-index.
+
+
+Cabecera fixed VS Cabecera sticky
+	video
+
+
+Efecto de slides con position sticky
+	video
+
+
+Ventana Modal / Menú Móvil con posicionamiento fixed
+	video
+
+
+Márgenes negativos
+	video
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

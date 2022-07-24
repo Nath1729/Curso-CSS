@@ -1,0 +1,9 @@
+/* relative: El elemento conserva sus dimensiones y posición original en el flujo del documento. Si se mueve toma como referencia su posición original */
+.relative {
+  background-color: blue;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  top: 100px;
+  left: 100px;
+}

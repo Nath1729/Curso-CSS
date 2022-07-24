@@ -1,0 +1,21 @@
+blockquote {
+  background-color: aqua;
+}
+
+blockquote cite {
+  background-color: inherit;
+}
+
+.dos {
+  background-color: khaki;
+  font-size: 32px;
+  border: solid 1px blue;
+}
+
+.dos cite {
+  background-color: lawngreen;
+  font-size: initial;
+  border: inherit;
+}
+
+/*https://web.dev/learn/css/inheritance/#which-properties-are-inheritable Enlace a página donde dice todas la propiedades de CSS al cual se le aplica la herencia.*/

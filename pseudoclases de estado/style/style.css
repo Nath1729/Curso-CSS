@@ -1,0 +1,52 @@
+/*Pseudo-clases: Dan estilo dependiendo del contexto, posición o estado del elemento
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes*/
+.form-pseudo *:required {
+  border-color: blue;
+}
+
+.form-pseudo *:valid {
+  border-color: green;
+}
+
+.form-pseudo *:invalid {
+  border-color: red;
+}
+
+.form-pseudo *:focus {
+  background-color: rgb(207, 212, 214);
+}
+
+.menu-pseudoclases * {
+  text-decoration: none;
+  display: block;
+  transition: all 1s;
+}
+
+.menu-pseudoclases *:hover {
+  display: block;
+  background-color: slateblue;
+  font-size: 30px;
+}
+
+.hover:hover {
+  transition: all 10s;
+  font-size: 20mm;
+  color: brown;
+}
+
+p:target {
+  background-color: gold;
+}
+
+/* Agrega un pseudo-elemento dentro del elemento de destino */
+p:target::before {
+  font: 70% sans-serif;
+  content: "►";
+  color: limegreen;
+  margin-right: 0.25em;
+}
+
+/* Estilo de elementos en cursiva dentro del elemento de destino */
+p:target i {
+  color: red;
+}

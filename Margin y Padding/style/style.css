@@ -1,0 +1,7 @@
+.div-uno,
+.div-dos {
+  background-color: aqua;
+  border: 1.5px solid brown;
+  padding: 10px;
+  margin: 10px;
+}

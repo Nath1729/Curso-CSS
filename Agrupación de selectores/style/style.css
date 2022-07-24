@@ -1,0 +1,8 @@
+.form-agrupación-selectores input[type="text"],
+.form-agrupación-selectores input[type="email"],
+.form-agrupación-selectores textarea {
+  border-color: yellow;
+  display: block;
+  width: 220px;
+  border: solid 2px yellow;
+}

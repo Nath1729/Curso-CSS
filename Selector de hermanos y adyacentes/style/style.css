@@ -1,0 +1,8 @@
+/* Los selectores de hermanos solo van a aplicar a los elementos que son hermanos y que estan por debajo del elemento de referencia */
+.hermanos-general ~ li {
+  background-color: chocolate;
+}
+
+.hermanos-adyacentes + li {
+  background-color: crimson;
+}

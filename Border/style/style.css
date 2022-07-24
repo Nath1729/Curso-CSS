@@ -1,0 +1,47 @@
+p {
+  width: 400px;
+  height: 200px;
+  border-color: green;
+  border-width: 1.5px;
+  border-style: solid;
+}
+
+.p-dos {
+  width: 400px;
+  height: 200px;
+  border-color: green;
+  border-width: 1.5px;
+  border-style: dashed;
+}
+
+.p-tres {
+  width: 400px;
+  height: 200px;
+  border-color: green;
+  border-width: 1.5px;
+  border-style: dotted;
+}
+
+.p-cuatro {
+  width: 400px;
+  height: 200px;
+  border-color: green;
+  border-width: thin;
+  border-style: solid;
+}
+
+.p-cinco {
+  width: 400px;
+  height: 200px;
+  border-color: green;
+  border-width: medium;
+  border-style: solid;
+}
+
+.p-seis {
+  width: 400px;
+  height: 200px;
+  border-color: green;
+  border-width: thick;
+  border-style: solid;
+}

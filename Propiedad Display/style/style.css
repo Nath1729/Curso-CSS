@@ -1,0 +1,28 @@
+/* 
+Propiedad Display
+  inline
+  block
+  inline-block - Se comporta como un elemento de línea pero acepta modificar sus dimensiones (alto y ancho)
+  none
+  table
+  list-item
+  flex - ve mi curso de Flexbox CSS
+  grid - ve mi curso de Grid CSS
+*/
+
+.caja-none,
+.caja-inline-block {
+  background-color: chartreuse;
+  width: 600px;
+  height: 300px;
+  border: solid 1px black;
+  margin: 2px;
+}
+
+.caja-inline-block {
+  display: inline-block;
+}
+
+.caja-none {
+  display: none;
+}

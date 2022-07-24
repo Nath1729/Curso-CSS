@@ -1,0 +1,33 @@
+blockquote#cita-marco.cita-marco {
+background-color: limegreen;
+}
+
+blockquote {
+  background-color: coral;
+}
+
+blockquote {
+  background-color: red !important;
+}
+
+#cita-marco {
+  background-color: crimson;
+  font-family: 'Times New Roman';
+}
+
+blockquote.cita-marco {
+  background-color: tomato;
+}
+
+.cita-marco {
+  background-color: cornflowerblue;
+}
+
+blockquote#cita-marco {
+  background-color: lightsalmon;
+}
+
+blockquote {
+  background-color: sienna !important;
+}
+

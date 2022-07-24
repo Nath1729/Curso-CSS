@@ -1,0 +1,27 @@
+.container-floats {
+  background-color: rgb(62, 146, 59);
+}
+
+.float-right {
+  background-color: burlywood;
+  float: right;
+}
+
+.float-left {
+  background-color: cadetblue;
+  float: left;
+}
+
+.container-floats-dos {
+  background-color: rgb(62, 146, 59);
+}
+
+.float-right-dos {
+  background-color: burlywood;
+  float: right;
+}
+
+.float-left-dos {
+  background-color: cadetblue;
+  float: left;
+}

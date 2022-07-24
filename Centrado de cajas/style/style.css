@@ -1,0 +1,9 @@
+.centrado-sitio-web {
+  border: 2px solid rgb(58, 32, 117);
+  background-color: rgb(62, 161, 70);
+  width: 800px;
+  height: 1000px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}

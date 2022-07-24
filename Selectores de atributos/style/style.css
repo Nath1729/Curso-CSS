@@ -1,0 +1,8 @@
+.selectores-atributos a[href] {
+  color: darkgreen;
+}
+
+.selectores-atributos a[target="_blank"] {
+  font-weight: bold;
+  text-decoration: none;
+}
